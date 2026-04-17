@@ -1,0 +1,84 @@
+﻿<!-- This is a weather app for golfers -->
+<!-- Mainly my dad -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whether You Should Golf</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <container class="header-container">
+    <h1><i>Weather</i> You Should Golf</h1>
+    </container>
+  </header>
+
+  <main>
+   
+    <div class="spacer"></div>
+    <container class="golf-container">
+    <img src="/assets/bill1.jpg" alt="Hole in one!" class="golf-image">
+    </container>
+    <div class="spacer"></div>
+    <h2>At Henderson Golf Club</h2>
+    <h3>Savannah, GA</h3>
+
+    <div class="spacer"></div>
+
+    <section class="current">
+      <h2>Current</h2>
+      <div class="c_detail">
+        <p id="temperature_2m">--&deg;F</p>
+        <p id="apparent_temperature">Feels like --&deg;F</p>
+        <p id="precipitation">Precipitation: -- in</p>
+        <p id="wind_speed">Wind: -- mph</p>
+        <p id="humidity">Humidity: --%</p>
+        <p id="condition">Condition: --</p>
+        <p id="current-time">Loading current conditions...</p>
+      </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section id="hourly" class="hourly">
+      <h2>Hourly</h2>
+      <div id="hourly-forecast" class="h_detail">
+        <p>Loading hourly forecast...</p>
+      </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section id="weekly" class="weekly">
+      <h2>Weekly</h2>
+      <div id="weekly-forecast" class="w_detail">
+        <p>Loading weekly forecast...</p>
+      </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <h2>Should You Golf?</h2>
+    <section class="answer">
+      <p id="golf-answer">Checking the weather...</p>
+      <p id="golf-reason"></p>
+    </section>
+
+    <div id="weather-icons" class="weather-icons" aria-label="Weather condition icons"></div>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+  </main>
+
+  <footer>
+    <p>Happy Hole-in-Ones</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
